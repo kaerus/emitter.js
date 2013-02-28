@@ -39,10 +39,6 @@ try{root = global} catch(e){try {root = window} catch(e){root = this}};
         this._events = {};  
     }
 
-    Emitter.prototype.hasEvent = function(event) {
-        return !!this._events[event];
-    }
-
     Emitter.prototype.listeners = function(event) {
         var handlers = this._events[event];
 
@@ -57,14 +53,14 @@ try{root = global} catch(e){try {root = window} catch(e){root = this}};
     }
 
     Emitter.prototype.on = function(event,handler) {
-        var e = this._events[event];
+        var handlers = this._events[event];
         
-        if(!e) {
+        if(!handlers) {
             this._events[event] = handler;
-        } else if(!Array.isArray(e)) {
-            if(e !== handler) this._events[event] = [e].concat(handler);  
+        } else if(!Array.isArray(handlers)) {
+            if(handlers !== handler) this._events[event] = [handlers].concat(handler);  
         } else {
-            if(e.indexOf(handler) < 0) e[e.length] = handler; 
+            if(handlers.indexOf(handler) < 0) handlers[handlers.length] = handler; 
         }    
 
         return this;
