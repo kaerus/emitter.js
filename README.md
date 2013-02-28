@@ -3,4 +3,15 @@
 emitter.js
 ==========
 
-Event emitter component
+Event emitter component that works everywhere.
+
+Usage
+-----
+Included as an AMD or CommonJS module or exported as a global Emitter.
+Works serverside and in browsers.
+
+
+
+
+
+
