@@ -17,7 +17,8 @@
     "anders elo <anders@kaerus.com>"
   ],
   "devDependencies": {
-    "promises-aplus-tests":">=1.0.0"
+    "mocha": "*",
+    "should": "*"
   },
   "bugs": {
     "url": "https://github.com/kaerus/emitter.js/issues"
