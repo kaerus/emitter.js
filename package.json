@@ -1,0 +1,33 @@
+{
+  "name": "emitterjs",
+  "version": "0.1.0",
+  "main": "emitter.js",
+  "description": "Event emitter library",
+  "keywords": [
+    "emit",
+    "event",
+    "emitter"
+  ],
+  "author": { 
+    "name": "Kaerus",
+    "email": "contact@kaerus.com",
+    "web": "http://kaerus.com"
+  },
+  "contributors": [
+    "anders elo <anders@kaerus.com>"
+  ],
+  "devDependencies": {
+    "promises-aplus-tests":">=1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/kaerus/emitter.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kaerus/emitter.js"
+  },
+  "scripts": {
+    "test":"make tests"
+  },
+  "license": "APACHE2_0"
+}

@@ -1,4 +1,4 @@
 emitter.js
 ==========
 
-Emitter library
+Event emitter component
