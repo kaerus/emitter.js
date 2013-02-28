@@ -28,7 +28,7 @@
     "url": "git://github.com/kaerus/emitter.js"
   },
   "scripts": {
-    "test":"make tests"
+    "test":"make test"
   },
   "license": "APACHE2_0"
 }
