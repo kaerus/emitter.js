@@ -1,0 +1,4 @@
+emitter.js
+==========
+
+Emitter library
