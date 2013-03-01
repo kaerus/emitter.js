@@ -75,7 +75,7 @@ try{root = global} catch(e){try {root = window} catch(e){root = this}};
     }
 
     Emitter.prototype.off = function(event,handler) {
-        handler = handler ? handler._off || handler : null;
+        if(handler && handler._off) handler = handler._off;
         
         if(event){ 
             if(!this._events[event]) return;
